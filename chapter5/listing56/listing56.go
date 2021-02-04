@@ -42,6 +42,7 @@ func main() {
 		level: "super",
 	}
 
+	ad.user.notify()
 	// Send the admin user a notification.
 	// The embedded inner type's implementation of the
 	// interface is "promoted" to the outer type.
