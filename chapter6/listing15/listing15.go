@@ -21,11 +21,12 @@ var (
 // main is the entry point for all Go programs.
 func main() {
 	// Add a count of two, one for each goroutine.
-	wg.Add(2)
+	wg.Add(3)
 
 	// Create two goroutines.
 	go doWork("A")
 	go doWork("B")
+	go doWork("C")
 
 	// Give the goroutines time to run.
 	time.Sleep(1 * time.Second)
